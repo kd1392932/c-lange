@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+struct fruit {
+	char name[30];
+	int price;
+	int point;
+	int number;
+	int total;
+};
+
+main()
+{
+	struct fruit fruit;
+	strcpy(fruit.name,"peach");
+	fruit.price = 300;
+	fruit.point = 5;
+	fruit.number = 3;
+	fruit.total = 0;
+	fruit.total = fruit.price * fruit.number;
+	printf("è§ïiñº: %s\n", fruit.name);
+	printf("âøäi:	%dâ~\n", fruit.price);
+	printf("Ç®ëEÇﬂìx:");
+	for (int i = 0; i < fruit.point; i++) {
+		printf("Åö ");
+	}
+	printf("\nå¬êî:	%då¬\n", fruit.number);
+	printf("ã‡äz:	\\%d-", fruit.total);
+}
