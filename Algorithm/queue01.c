@@ -11,19 +11,19 @@ int dequeue(int* pd);
 
 main()
 {
-	int key, data, result;
+	int key, data, result=0;
 
 	do {
-		printf("\n\nŸƒGƒ“ƒLƒ…[‚ÍiAƒfƒLƒ…[‚Ío‚ğ“ü—Í‚µ‚Ä„");
+		printf("\n\nï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½Lï¿½ï¿½ï¿½[ï¿½ï¿½iï¿½Aï¿½fï¿½Lï¿½ï¿½ï¿½[ï¿½ï¿½oï¿½ï¿½ï¿½ï¿½Í‚ï¿½ï¿½Äï¿½");
 		key = getche();
 		printf("\n");
 
 		if (key == 'i') {
-			printf("ƒf[ƒ^“ü—Í„");
+			printf("ï¿½fï¿½[ï¿½^ï¿½ï¿½ï¿½Íï¿½");
 			scanf("%d", &data);
 			result = enqueue(data);
 			if (result == -1) {
-				printf("\n¦ ¦ ¦ ƒLƒ…[‚ªˆê”t‚Å‚· ¦ ¦ ¦\n");
+				printf("\nï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Lï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½tï¿½Å‚ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½\n");
 			}
 			else {
 				display();
@@ -33,10 +33,10 @@ main()
 		if (result == 'o') {
 			result = dequeue(&data);
 			if (result == -1) {
-				printf("\n¦ ¦ ¦ ƒLƒ…[‚ª‹ó‚Å‚· ¦ ¦ ¦\n");
+				printf("\nï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½Lï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½\n");
 			}
 			else {
-				printf("ƒLƒ…[‚©‚çƒf[ƒ^(%d)‚ğæ‚èo‚µ‚Ü‚µ‚½\n", data);
+				printf("ï¿½Lï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½ï¿½fï¿½[ï¿½^(%d)ï¿½ï¿½ï¿½ï¿½ï¿½oï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½\n", data);
 				display();
 			}
 		}
@@ -47,14 +47,14 @@ void display(void)
 {
 	int i;
 
-	printf("\n===Œ»İ‚ÌƒLƒ…[‚Ì“à—e===\n");
+	printf("\n===ï¿½ï¿½ï¿½İ‚ÌƒLï¿½ï¿½ï¿½[ï¿½Ì“ï¿½ï¿½e===\n");
 	for (i = 0; i < QUEUESIZE; i++) {
-		printf("queue[%2d]‚Í%5d", i, queue[i]);
+		printf("queue[%2d]ï¿½ï¿½%5d", i, queue[i]);
 		if (i == head) {
-			printf("©head‚ª¦‚µ‚Ä‚¢‚éŠ(Œ»İhead‚Í%d)", head);
+			printf("ï¿½ï¿½headï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½éŠ(ï¿½ï¿½ï¿½ï¿½headï¿½ï¿½%d)", head);
 		}
 		if (i == tail) {
-			printf("©tail‚ª¦‚µ‚Ä‚¢‚éŠ(Œ»İtail‚Í%d)", tail);
+			printf("ï¿½ï¿½tailï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½éŠ(ï¿½ï¿½ï¿½ï¿½tailï¿½ï¿½%d)", tail);
 		}
 		printf("\n");
 	}

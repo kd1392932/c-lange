@@ -1,21 +1,24 @@
 #include<stdio.h>
 main()
 {
-	int i, s, deta[] = { 25,50,69,18,6,35,43,87,71,99 };
-	printf("’Tõ’ls‚ð“ü—Í->");
+	int i, s;
+	int deta[10] = { 25,50,69,18,6,35,43,87,71,99 };
+	printf("ï¿½Tï¿½ï¿½ï¿½lsï¿½ï¿½ï¿½ï¿½ï¿½->");
 	scanf("%d", &s);
 	
 
-	for (deta[10] = s; i = 0; i <= 10; i++) {
+	for (i = 0; i <= 9; i++) {
 		if (s == deta[i]) {
 			break;
 		}
 	}
 
 	if (i >= 10) {
-		printf("Œ©‚Â‚ç‚È‚©‚Á‚½");
+		printf("ï¿½ï¿½ï¿½Â‚ï¿½È‚ï¿½ï¿½ï¿½ï¿½ï¿½");
 	}
 	else {
-		printf("deta[%d]‚É‚ ‚Á‚½",i);
+		printf("deta[%d]ï¿½É‚ï¿½ï¿½ï¿½ï¿½ï¿½",i);
 	}
+
+	return 0;
 }
